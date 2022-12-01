@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".FirstFragment"
+    android:background="@color/tausta">
 
   <!--OTSIKKO -->
   <TextView
@@ -12,8 +13,8 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="50dp"
-      android:text="Task Tracker"
-      android:textColor="@color/black"
+      android:text="TASK TRACKER"
+      android:textColor="@color/teksti"
       android:textStyle="bold"
       android:textSize="30dp"
       android:elegantTextHeight="true"
@@ -27,7 +28,7 @@
       android:id="@+id/infoButton"
       android:layout_width="50dp"
       android:layout_height="50dp"
-      android:background="@color/white"
+      android:background="@color/tausta"
       android:maxHeight="50dp"
       android:minHeight="50dp"
       android:src="@android:drawable/ic_menu_info_details"
