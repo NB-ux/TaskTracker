@@ -12,8 +12,11 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginTop="50dp"
-      android:text="TaskTracker"
+      android:text="Task Tracker"
+      android:textColor="@color/black"
+      android:textStyle="bold"
       android:textSize="30dp"
+      android:elegantTextHeight="true"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintRight_toRightOf="parent"
       app:layout_constraintTop_toBottomOf="parent"
@@ -22,11 +25,11 @@
   <!-- INFONÄPPÄIN (pitää sumplia ulkonäön kanssa vielä)-->
   <ImageButton
       android:id="@+id/infoButton"
-      android:layout_width="40dp"
-      android:layout_height="40dp"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
       android:background="@color/white"
-      android:maxHeight="30dp"
-      android:minHeight="30dp"
+      android:maxHeight="50dp"
+      android:minHeight="50dp"
       android:src="@android:drawable/ic_menu_info_details"
       tools:ignore="MissingConstraints"
       tools:layout_editor_absoluteX="10dp"
@@ -45,7 +48,7 @@
       android:id="@+id/entertextET"
       android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:hint="Enter new todo"
+      android:hint="Uusi tehtävä"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toStartOf="@+id/addTodobtn"
       app:layout_constraintStart_toStartOf="parent" />
@@ -54,7 +57,7 @@
       android:id="@+id/addTodobtn"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Add"
+      android:text="Lisää"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toStartOf="@+id/deleteTodobtn" />
 
@@ -62,7 +65,7 @@
       android:id="@+id/deleteTodobtn"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Delete"
+      android:text="Poista valmiit"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
