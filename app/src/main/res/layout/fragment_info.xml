@@ -8,6 +8,9 @@
     android:background="@color/tausta">
 
     <!-- OTSIKKO -->
+
+
+
     <TextView
         android:id="@+id/taskTracker"
         android:layout_width="wrap_content"
@@ -22,7 +25,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="50dp" />
 
-    <!-- SULKUNÄPPÄIN (pitää sumplia ulkonäön kanssa vielä)-->
+    <!-- sulku -->
     <ImageButton
         android:id="@+id/exitButton"
         android:layout_width="50dp"
@@ -35,5 +38,43 @@
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="10dp"  />
 
+    <!-- infotekstit -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="295dp"
+        android:layout_height="66dp"
+        android:text=" + Lisää tehtävä tehtävälistaan 'Lisää' -painikkeen avulla. "
+        android:textColor="@color/teksti"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="291dp"
+        android:layout_height="80dp"
+        android:text="+ Merkitse tehtävä tehdyksi napauttamalla tehtävää."
+        android:textColor="@color/teksti"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="216dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="288dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="88dp"
+        android:text="+ Poista tehdyt tehtävät listalta painamalla
+'Poista valmiit' -painiketta."
+        android:textColor="@color/teksti"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="63dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
